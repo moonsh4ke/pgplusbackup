@@ -1,7 +1,5 @@
 FROM postgres:17-bookworm
 
-# ENV PGBACKREST_VERSION 3
-
 ENV PGBACKRESTDATA /var/lib/pgbackrest
 
 RUN apt-get update \
