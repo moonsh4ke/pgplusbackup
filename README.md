@@ -8,6 +8,7 @@ docker run \
 	-v $PWD/pgbackrest.sample.conf:/etc/pgbackrest.conf \
 	-v $PWD/initdb:/docker-entrypoint-initdb.d \
 	-e POSTGRES_PASSWORD=password \
-	ghcr.io/pgplusbackup \
+	--name pgplusbackup
+	pgplusbackup \
 	-c config_file=/etc/postgresql/postgresql.conf
 ```
