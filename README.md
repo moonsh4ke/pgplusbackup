@@ -1,4 +1,17 @@
+Build:
+
+```sh
+docker build -t pgplusbackup .
+```
+
 Example:
+
+```sh
+chmod +x demo
+./demo
+```
+
+Usage:
 
 ```sh
 docker run \
